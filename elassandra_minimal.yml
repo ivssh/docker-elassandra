@@ -1,0 +1,10 @@
+---
+version: '2.2'
+services:
+  elassandra:
+    image: strapdata/elassandra
+    volumes:
+      - /usr/share/cassandra/data
+    ports:
+      - "9201:9200"
+      - "9301:9300"
